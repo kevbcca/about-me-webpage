@@ -1,11 +1,46 @@
-.background-container {
+.background-container {  /* background container for the entire page */
     background-color: #e0f3ff;
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
-    padding: 0;
+    padding: 80px 0 0 0;
 }
 
-.body-container {
+.navbar {  /* navbar for the entire page */
+    display: flex;
+    justify-content: center;
+    gap: 22px;
+    background: linear-gradient(90deg, #b2e0f7 25%, #dbeeff 100%);
+    padding: 18px 0 18px 0;
+    border-radius: 0 0 14px 14px;
+    box-shadow: 0 4px 14px 0 rgba(30,90,140,0.09);
+    
+    /* make navbar fixed to top */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.navbar-link {  /* navbar links */
+    color: #165572;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 10px 22px;
+    border-radius: 8px;
+    font-size: 1.05;
+    transition: background 0.18s, color 0.18s;
+    background: none;
+}
+
+.navbar-link:hover {  /* also navbar links */
+    background: #eaf6fc;
+    color: #db2b2b;
+    text-decoration: underline;
+    box-shadow: 0 2px 8px rgba(40,60,110,0.04);
+}
+
+.body-container {   /* body container for the entire page */
     max-width: 750px;
     background: #fff;
     margin: 32px auto 32px auto;
@@ -14,7 +49,8 @@
     border-radius: 12px;
 }
 
-.heading {
+.heading {   /* heading for the entire page */
+    font-size: 2.5;
     color: #db2b2b;
     text-align: center;
     margin-top: 24px;
@@ -22,18 +58,22 @@
     font-family: Segoe UI;
 }
 
-.music-section, .movies-section, .favorite-website {
+.intro-section, .hobbies-section, .music-section, .movies-section, .favorite-website {   /* sections for the entire page */
     margin-bottom: 38px;
     padding-bottom: 12px;
     border-bottom: 2px solid #dbeeff;
 }
 
-.intro p {
+.heading {
+    scroll-margin-top: 110px; /* slightly larger than navbar height */
+}
+
+.intro-section p {   /* intro paragraph for the entire page */
     font-size: 1.12;
     color: #175b7a;
 }
 
-.hobbies-list {
+.hobbies-list {   /* hobbies list for the entire page */
     margin: 12px 0 20px 24px;
     padding: 12px 16px;
     background: #f6fafd;
@@ -44,8 +84,7 @@
     color: #184870;
 }
 
-
-.movies-list {
+.movies-list {   /* movies list for the entire page */
     margin: 10px 0 20px 24px;
     padding: 12px 16px;
     background: #fdf3f3;
@@ -55,15 +94,25 @@
     color: #7e2a2a;
 }
 
-.game-images, .music-images, .movie-images, img {
-    margin: 10px 8px 10px 0;
+.game-images, .music-images, .movie-images {   /* images for the entire page */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.images {  /* center all images and preserve existing visual styles */
+    display: block;
+    margin: 10px auto;
     border-radius: 8px;
     box-shadow: 0 1px 4px rgba(60,60,60,0.15);
     border: 1px solid #b3d4f0;
-    
+    height: 150px;
+    width: 150px
 }
 
-.tiktok-link {
+.tiktok-link {   /* tiktok link for the entire page */
     color: #1976d2;
     text-decoration: none;
     font-weight: bold;
@@ -74,12 +123,12 @@
     transition: background 0.2s;
 }
 
-.tiktok-link:hover {
+.tiktok-link:hover {  /* hover effect for tiktok link */
     background: #d2edfa;
     text-decoration: underline;
 }
 
-.schedule-table {
+.schedule-table {   /* schedule table for the entire page */
     margin: 24px auto;
     border-collapse: collapse;
     width: 80%;
@@ -89,24 +138,33 @@
     box-shadow: 0 2px 6px rgba(0,32,81,0.05);
 }
 
-.schedule-table th, .schedule-table td {
+.schedule-table th, .schedule-table td {  /* table styles */
     padding: 12px 16px;
     border: 1px solid #adcbe6;
     text-align: center;
     font-size: 1;
 }
 
-.schedule-table th {
+.schedule-table th {   /* table header styles */
+    background: #dce6f3;
+    font-weight: bold;
     background-color: #b2e0f7;
     color: #165572;
     font-weight: bold;
 }
 
-.schedule-table {
+.schedule-table {   /* table styles */
+    margin: 24px auto;
+    border-collapse: collapse;
+    width: 80%;
+    background: #f8fbfd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0,32,81,0.05);
     background-color: #eaf6fc;
 }
 
-.body-container p {
+.body-container p {   /* body container paragraph styles */
     font-family: Arial;
     line-height: 1.6;
     color: #175b7a;
