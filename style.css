@@ -68,29 +68,29 @@
     scroll-margin-top: 110px; /* slightly larger than navbar height */
 }
 
-.intro-section, .paragraph {   /* intro paragraph for the entire page */
+.intro-section p {   /* intro paragraph for the entire page */
     font-size: 1.12;
     color: #175b7a;
 }
 
 .hobbies-list {   /* hobbies list for the entire page */
-    margin: 12px 0 20px 24px;
-    padding: 12px 16px;
+    margin: 10px 0 20px 24px;
+    padding: 22px 46px;
     background: #f6fafd;
     border-radius: 8px;
     border: 1px solid #c3e3f0;
-    font-size: 1.05;
+    font-size: 1;
     list-style-type: disc;
     color: #184870;
 }
 
 .movies-list {   /* movies list for the entire page */
     margin: 10px 0 20px 24px;
-    padding: 12px 16px;
+    padding: 22px 46px;
     background: #fdf3f3;
     border-radius: 8px;
     border: 1px solid #f7cccc;
-    font-size: 1.05;
+    font-size: 1;
     color: #7e2a2a;
 }
 
@@ -137,7 +137,7 @@
     box-shadow: 0 2px 6px rgba(0,32,81,0.05);
 }
 
-.schedule-table, .table-header, .schedule-table, .table-data {  /* table styles */
+.schedule-table th, .schedule-table td {  /* table styles */
     padding: 12px 16px;
     border: 1px solid #adcbe6;
     text-align: center;
@@ -160,6 +160,14 @@
     border-radius: 8px;
     box-shadow: 0 2px 6px rgba(0,32,81,0.05);
     background-color: #eaf6fc;
+}
+
+.body-container p {   /* body container paragraph styles */
+    font-family: Arial;
+    line-height: 1.6;
+    color: #175b7a;
+    margin: 16px 0 18px 0;
+    padding: 8px 10px;
 }
 
 .flex-container {
